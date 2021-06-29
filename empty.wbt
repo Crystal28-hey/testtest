@@ -1,0 +1,502 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.12894573782742563 0.9674172115530849 0.2178920271303993 2.073497115957404
+  position 0.802528721439091 0.6954249598949205 -0.40427666138758583
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+Ball {
+  hidden linearVelocity_0 6.064735688450806e-06 -2.047780919550133e-06 1.1753258917306233e-05
+  hidden angularVelocity_0 0.0003602776398042362 5.395111611269103e-22 -0.00018590492009448224
+  translation -0.18368112006712448 0.032484567634670364 0.3742469607319714
+  rotation -0.007781314768666834 0.9999686437888173 0.001470571189851595 0.5791864022113486
+  mass 0.01
+}
+Robot {
+  translation -0.09759390470285564 0.03972214736918851 0.16458693242001105
+  rotation -1.0320181605232855e-05 0.999999999172212 3.9358224545418675e-05 -0.6855511060186412
+  children [
+    DEF Body Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.05 0.2
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position -172.63779257338504
+        anchor 0.06 0 0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel1"
+        }
+      ]
+      endPoint Solid {
+        translation 0.059999999999999984 2.07854500105855e-08 0.050000003137237826
+        rotation 0.7063952702298153 -0.7058329726049585 -0.05296731993025819 3.2475125479379963
+        children [
+          DEF Wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        boundingObject USE Wheel
+        physics Physics {
+        }
+        linearVelocity 1.7694038668686243e-12 -6.140138029964657e-17 -2.8024836874373274e-12
+        angularVelocity 8.166635922030972e-13 -8.088302817158895e-12 6.795222467117201e-13
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 143.17859922625703
+        anchor -0.06 0 0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel2"
+        }
+      ]
+      endPoint Solid {
+        translation -0.06000067475809045 -1.101946775651845e-06 0.050004537291599475
+        rotation 0.5265619419644515 -0.5261427934483396 -0.667762144911647 4.319849556533284
+        children [
+          DEF Wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE Wheel
+        physics Physics {
+        }
+        linearVelocity 2.3839710228834086e-12 2.6893085506970933e-16 -3.553404742774901e-12
+        angularVelocity -7.674660064183409e-11 -8.085794218591346e-12 -6.277870590151456e-11
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position -172.6367792366343
+        anchor 0.06 0 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel3"
+        }
+      ]
+      endPoint Solid {
+        translation 0.06000000125664579 6.077108751492023e-06 -0.04999843599067584
+        rotation 0.7063817675997115 -0.705819480723083 -0.0533259696067924 3.2482283935398364
+        children [
+          DEF Wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        name "solid(2)"
+        boundingObject USE Wheel
+        physics Physics {
+        }
+        linearVelocity 2.395913814243931e-12 5.662055109855315e-16 -2.2901577421699927e-12
+        angularVelocity -1.1457142372219274e-10 -8.083355670887428e-12 -9.371475335132358e-11
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 143.1796072747217
+        anchor -0.06 0 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel4"
+        }
+      ]
+      endPoint Solid {
+        translation -0.060000031050260805 -1.5005595548659052e-06 -0.04999395151441334
+        rotation 0.5263183629749437 -0.5258994083501157 -0.6681457873042181 4.32038028431304
+        children [
+          DEF Wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        name "solid(3)"
+        boundingObject USE Wheel
+        physics Physics {
+        }
+        linearVelocity 3.009715224195935e-12 3.7223961404079787e-16 -3.0413815356543704e-12
+        angularVelocity -1.0170068878701531e-10 -8.08584723942175e-12 -8.317110075849961e-11
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 3.149999999999997
+        axis 0 1 0
+        anchor 0 0.12 0
+      }
+      device [
+        RotationalMotor {
+          name "twister1"
+        }
+      ]
+      endPoint Solid {
+        translation 0 0.12 0
+        rotation 0 1 0 3.149999999999997
+        children [
+          DEF twister1 Shape {
+            appearance PBRAppearance {
+            }
+            geometry Capsule {
+              height 0.2
+              radius 0.03
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              position -0.49999999999999994
+              anchor 0 0.097 0
+            }
+            device [
+              RotationalMotor {
+                name "pivot1"
+              }
+            ]
+            endPoint Solid {
+              translation 0 0.18739100387470844 -0.04938083047623293
+              rotation -1 0 0 0.4999999999999995
+              children [
+                DEF pivot1 Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 0.6 1
+                  }
+                  geometry Capsule {
+                    height 0.19
+                    radius 0.03
+                  }
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    position -1.5500000000000007
+                    anchor 0 0.0984 0
+                  }
+                  device [
+                    RotationalMotor {
+                      name "pivot2"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0 0.10009685794873228 -0.08158235515785148
+                    rotation -1 0 0 1.5500000000000005
+                    children [
+                      DEF pivot2 Shape {
+                        appearance PBRAppearance {
+                          baseColor 1 1 0.7
+                        }
+                        geometry Capsule {
+                          height 0.16
+                          radius 0.03
+                        }
+                      }
+                      HingeJoint {
+                        jointParameters HingeJointParameters {
+                          position -1.0000000000000002
+                          anchor 0 0.0817 0
+                        }
+                        device [
+                          RotationalMotor {
+                            name "pivot3"
+                          }
+                        ]
+                        endPoint Solid {
+                          translation 0 0.13111057979252616 -0.07740771931510718
+                          rotation -1 0 0 1.0000000000000002
+                          children [
+                            DEF pivot3 Shape {
+                              appearance PBRAppearance {
+                              }
+                              geometry Capsule {
+                                height 0.175
+                                radius 0.03
+                              }
+                            }
+                            HingeJoint {
+                              jointParameters HingeJointParameters {
+                                axis 0 1 0
+                                anchor 0 0.1 0
+                              }
+                              device [
+                                RotationalMotor {
+                                  name "twister2"
+                                }
+                              ]
+                              endPoint Solid {
+                                translation 0 0.1 0
+                                children [
+                                  DEF twister2 Shape {
+                                    appearance PBRAppearance {
+                                      baseColor 0 1 1
+                                    }
+                                    geometry Cylinder {
+                                      height 0.04
+                                      radius 0.03
+                                    }
+                                  }
+                                  HingeJoint {
+                                    jointParameters HingeJointParameters {
+                                      position -0.7500000000000001
+                                      anchor 0 0.01 0
+                                    }
+                                    device [
+                                      RotationalMotor {
+                                        name "grabber1"
+                                      }
+                                    ]
+                                    endPoint Solid {
+                                      translation 0 0.04408193800116673 0.03658444344369107
+                                      rotation 1 0 0 0.82
+                                      children [
+                                        DEF h1 Shape {
+                                          appearance PBRAppearance {
+                                          }
+                                          geometry Capsule {
+                                            height 0.05
+                                            radius 0.01
+                                          }
+                                        }
+                                        Solid {
+                                          translation 0 0.0300239 -0.029976
+                                          rotation 1 0 0 -1.57
+                                          children [
+                                            DEF g1 Shape {
+                                              appearance PBRAppearance {
+                                              }
+                                              geometry Capsule {
+                                                height 0.05
+                                                radius 0.01
+                                              }
+                                            }
+                                          ]
+                                          boundingObject USE g1
+                                        }
+                                      ]
+                                      boundingObject USE h1
+                                    }
+                                  }
+                                  HingeJoint {
+                                    jointParameters HingeJointParameters {
+                                      position 0.7500000000000001
+                                      anchor 0 0.01 0
+                                    }
+                                    device [
+                                      RotationalMotor {
+                                        name "grabber2"
+                                      }
+                                    ]
+                                    endPoint Solid {
+                                      translation 0 0.04408193800116673 -0.03658444344369105
+                                      rotation 1 0 0 2.3200000000000003
+                                      children [
+                                        DEF h2 Shape {
+                                          appearance PBRAppearance {
+                                          }
+                                          geometry Capsule {
+                                            height 0.05
+                                            radius 0.01
+                                          }
+                                        }
+                                        Solid {
+                                          translation 0 -0.0299761 -0.030024
+                                          rotation 1 0 0 -1.57
+                                          children [
+                                            DEF g2 Shape {
+                                              appearance PBRAppearance {
+                                              }
+                                              geometry Capsule {
+                                                height 0.05
+                                                radius 0.01
+                                              }
+                                            }
+                                          ]
+                                          boundingObject USE g2
+                                        }
+                                      ]
+                                      name "solid(1)"
+                                      boundingObject USE h2
+                                    }
+                                  }
+                                  HingeJoint {
+                                    jointParameters HingeJointParameters {
+                                      position -0.7500000000000001
+                                      axis 0 0 1
+                                      anchor 0 0.01 0
+                                    }
+                                    device [
+                                      RotationalMotor {
+                                        name "grabber3"
+                                      }
+                                    ]
+                                    endPoint Solid {
+                                      translation -0.03655146071009113 0.0441056061080677 0
+                                      rotation 0 0 1 0.82
+                                      children [
+                                        DEF h3 Shape {
+                                          appearance PBRAppearance {
+                                            baseColor 1 0 0
+                                          }
+                                          geometry Capsule {
+                                            height 0.05
+                                            radius 0.01
+                                          }
+                                        }
+                                        Solid {
+                                          translation 0.0299761 0.030024 0
+                                          rotation 0 0 1 -1.57
+                                          children [
+                                            DEF g3 Shape {
+                                              appearance PBRAppearance {
+                                              }
+                                              geometry Capsule {
+                                                height 0.05
+                                                radius 0.01
+                                              }
+                                            }
+                                          ]
+                                          boundingObject USE g3
+                                        }
+                                      ]
+                                      name "solid(2)"
+                                      boundingObject USE h3
+                                    }
+                                  }
+                                  HingeJoint {
+                                    jointParameters HingeJointParameters {
+                                      position 0.7500000000000001
+                                      axis 0 0 1
+                                      anchor 0 0.01 0
+                                    }
+                                    device [
+                                      RotationalMotor {
+                                        name "grabber4"
+                                      }
+                                    ]
+                                    endPoint Solid {
+                                      translation 0.03655146071009113 0.0441056061080677 0
+                                      rotation 0 0 -1 0.82
+                                      children [
+                                        DEF h4 Shape {
+                                          appearance PBRAppearance {
+                                            baseColor 1 0 0
+                                          }
+                                          geometry Capsule {
+                                            height 0.05
+                                            radius 0.01
+                                          }
+                                        }
+                                        Solid {
+                                          translation -0.029976 0.0300239 0
+                                          rotation 0 0 1 1.57
+                                          children [
+                                            DEF g4 Shape {
+                                              appearance PBRAppearance {
+                                              }
+                                              geometry Capsule {
+                                                height 0.05
+                                                radius 0.01
+                                              }
+                                            }
+                                          ]
+                                          boundingObject USE g4
+                                        }
+                                      ]
+                                      name "solid(3)"
+                                      boundingObject USE h4
+                                    }
+                                  }
+                                ]
+                                boundingObject USE twister2
+                              }
+                            }
+                          ]
+                          boundingObject USE pivot3
+                        }
+                      }
+                    ]
+                    boundingObject USE pivot2
+                  }
+                }
+              ]
+              boundingObject USE pivot1
+            }
+          }
+        ]
+        name "solid(4)"
+        boundingObject USE twister1
+      }
+    }
+  ]
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "Keyboard"
+  linearVelocity 2.3899068566160527e-12 -4.54747350886464e-16 -2.921989017499321e-12
+  angularVelocity 5.403527106327693e-15 -8.088128853924211e-12 -5.2835243757648475e-15
+}
+TexturedBoxShape {
+  size 0.06 0.06 0.06
+}
+Solid {
+  translation -0.01584877030423826 0.04964672485521398 -0.4296565719337553
+  rotation -0.994441233196744 -0.0744534543125391 -0.0744534543125391 1.5763705721696177
+  children [
+    DEF box Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  boundingObject USE box
+  physics Physics {
+  }
+  linearVelocity -2.3935598541933293e-18 0.0012211383129102271 1.846934521189779e-17
+  angularVelocity 2.664535259100374e-16 -1.1179739880333187e-16 9.860761315262648e-32
+}
+Apple {
+  hidden linearVelocity_0 -0.0023373490083234303 -4.759851171664121e-17 2.8523505249193138e-06
+  hidden angularVelocity_0 5.704701049838627e-05 -0.03185272869676668 0.04674698016646861
+  translation 0.3433775307471883 0.04976456000000001 -0.047949143444071946
+  rotation 0.5387139737850918 0.5831838941638018 0.6080162827068195 -2.8100291861558833
+}
+RubberDuck {
+  hidden linearVelocity_0 -1.107502065534735e-11 -1.944366553497654e-05 -4.1289995794519126e-13
+  hidden angularVelocity_0 -1.8045011383548128e-11 -1.342170360703353e-10 -6.465812013676475e-11
+  translation 0.4608561925401179 0.020440561940654835 -0.14174755291655963
+  rotation -1.7131250504402755e-09 0.9999999999999949 1.0166578003779707e-07 0.06601290517960054
+}
